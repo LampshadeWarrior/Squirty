@@ -33,7 +33,23 @@
     <hr />
 
 <br class="clear" />
-
+  <div class="container">
     <%= yield %>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div CLASS="col-6">
+          <%= link_to "Click here for more powders!", "#", class: 'next-quote' %>
+        </div>
+        <div class="col-6 footer-blurb">
+          Proudly made by Iann Singer in Carmel, IN<br />
+          Sponsored by Merlinmannpowders.com
+        </div>
+        </p>
+      </div>
+    </div>
+  </div>
   </body>
 </html>
