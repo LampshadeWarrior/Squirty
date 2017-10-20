@@ -83,4 +83,26 @@ h2 {
 
 }
 
+@media (max-width: 750px) {
+  .footer-blurb {
+    text-align: left;
+  }
+}
+
+.modal {
+  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+
+}
+
+h2 span {
+  color: #dddddd;
+  font-family: 'ambleregular', sans-serif;
+}
+
+::selection {
+  background-color: #DB0000;
+}
+
+
+
 

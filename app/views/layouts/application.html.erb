@@ -23,12 +23,13 @@
           <% end %>
 
       </div>
-      <div class="col-4 slogan">
+      <div class="col col-sm-4 hidden-xs-down slogan">
         The Number One Quote Generator of the Powder Nation
       </div>
-      <div class="col-5 links">
+      <div class="col-10 offset-1 offset-sm-0 col-sm-5 links">
           <!-- Button trigger modal -->
     <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
+    &nbsp;
         <%= link_to 'About', about_path %>
       </div>
     </header>
@@ -46,8 +47,9 @@
           </div>
           <%= simple_form_for Quote.new do |f| %>
           <div class="modal-body">
-              <%= f.input :saying %>
-              <%= f.input :author %>
+              <%= f.input :saying, label: "What made you start using powders?", placeholder: "I realized I needed to up my T."%>
+              <br />
+              <%= f.input :author, label: "Who are you?", placeholder: "David Avocado Wolf" %>
           </div>
               
             
@@ -76,10 +78,10 @@
   <div class="footer">
     <div class="container">
       <div class="row">
-        <div CLASS="col-6">
+        <div CLASS="col-12 col-sm-6">
           <%= link_to "Click here for more powders!", root_path, class: 'next-quote' %>
         </div>
-        <div class="col-6 footer-blurb">
+        <div class="col-12 col-sm-6 footer-blurb">
           Proudly made by Iann Singer in Carmel, IN<br />
           Sponsored by Merlinmannpowders.com
         </div>
